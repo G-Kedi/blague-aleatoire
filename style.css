@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+h1{
+    font-size: 2rem;
+    font-family: 'Gloock', serif;
+}
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+.random-joke-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f3f3f3;
+    gap: 2rem;
+}
+
+.joke-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 5px #00000033;
+    min-height: 200px;
+    width: min(450px, 95%);
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    gap: 1rem;
+    background-color: #fff;
+}
+.question{
+    font-size: 1rem;
+    color: #333;
+    position: relative;
+}
+.question::after{
+    content: "";
+    width: 100px;
+    height: 3px;
+    background-color: #3498db;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.reponse{
+    font-size: .9rem;
+    color: #666;
+}
+
+.error{
+    font-size: .875rem;
+    background-color: rgba(255, 0, 0, 0.103);
+    padding: 1.5rem;
+    border-left: solid 2px red;
+    color: #444;
+}
+.new-joke-btn{
+    background-color: #3498db;
+    padding: .5rem 1rem;
+    color: #fff;
+    text-decoration: none;
+    border-radius: .1rem;
+    transition: all ease-in-out .2s;
+    box-shadow: 1px 1px 5px #00000033;
+    font-weight: 600;
+}
+.new-joke-btn:hover{
+    background-color: #2b7eb6;
+
+}
