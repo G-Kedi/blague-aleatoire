@@ -33,7 +33,7 @@ h1{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 90vh;
     background-color: #f3f3f3;
     gap: 2rem;
 }
@@ -60,7 +60,7 @@ h1{
 .question::after{
     content: "";
     width: 100px;
-    height: 3px;
+    height: 2px;
     background-color: #3498db;
     position: absolute;
     bottom: -10px;
@@ -69,7 +69,7 @@ h1{
 
 }
 .reponse{
-    font-size: .9rem;
+    font-size: 1rem;
     color: #666;
 }
 
@@ -92,5 +92,18 @@ h1{
 }
 .new-joke-btn:hover{
     background-color: #2b7eb6;
+
+}
+
+footer{
+    min-height: 10vh;
+    color: #666;
+    font-size: .875rem;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+footer  a{
+    text-decoration: none;
 
 }
